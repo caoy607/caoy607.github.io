@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background: rgba(0, 0, 0, 0.5)
+        }
+        ul,
+        li {
+            list-style: none;
+        }
+        body {
+            font-family: Georgia, serif;
+            color: #101096;
+            padding: 0;
+            margin: 0;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            min-width: 20em;
+        }
+        header {
+            background-color: #7dd8d6;
+            padding: .5em 1em;
+        }
+        main {
+            background-color: #66FFB2;
+            width: 100%;
+            box-sizing: border-box;
+            order: 2;
+            padding: .5em;
+        }
+        .left,
+        .right {
+            background-color: #49b4e7;
+            box-sizing: border-box;
+            padding: .5em;
+            margin: 0;
+            width: 100%;
+        }
+        .left {
+            order: 1;
+        }
+        .right {
+            order: 3
+        }
+        .left ul {
+            list-style: none;
+            padding: 0;
+        }
+        .left li {
+            padding: .2em;
+            display: inline-block;
+        }
+        footer {
+            background-color: #7dd8d6;
+            padding: .5em;
+            clear: both;
+            margin: 0;
+        }
+        @media screen and (min-width: 700px) {
+            .content {
+                display: block;
+                height: calc(100vh - 8em);
+                overflow-y: hidden;
+                margin: 0;
+            }
+            main {
+                position: relative;
+                float: left;
+                width: 100%;
+                padding: .2em 13.5em;
+                height: 100%;
+            }
+            .left {
+                position: relative;
+                float: left;
+                margin-left: -100%;
+                width: 12.5em;
+                height: 100%;
+            }
+            .right {
+                position: relative;
+                float: right;
+                margin-left: -100%;
+                width: 12.5em;
+                height: 100%;
+            }
+            .left li {
+                display: block;
+            }
+            header {
+                height: 6em;
+            }
+            footer {
+                height: 2em;
+            }
+        }
+        body {
+            font-family: Georgia, serif;
+            color: #101096;
+            padding: 0;
+            margin: 0;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            min-width: 20em;
+        }
+        header {
+            background-color: #7dd8d6;
+            padding: .5em 1em;
+        }
+        main {
+            background-color: #66FFB2;
+            width: 100%;
+            box-sizing: border-box;
+            order: 2;
+            padding: .5em;
+        }
+        .left,
+        .right {
+            background-color: #49b4e7;
+            box-sizing: border-box;
+            padding: .5em;
+            margin: 0;
+            width: 100%;
+        }
+        .left {
+            order: 1;
+        }
+        .right {
+            order: 3
+        }
+        .left ul {
+            list-style: none;
+            padding: 0;
+        }
+        .left li {
+            padding: .2em;
+            display: inline-block;
+        }
+        footer {
+            background-color: #7dd8d6;
+            padding: .5em;
+            clear: both;
+            margin: 0;
+        }
+        @media screen and (min-width: 700px) {
+            .content {
+                display: block;
+                height: calc(100vh - 8em);
+                overflow-y: hidden;
+                margin: 0;
+            }
+            main {
+                position: relative;
+                float: left;
+                width: 100%;
+                padding: .2em 13.5em;
+                height: 100%;
+            }
+            .left {
+                position: relative;
+                float: left;
+                margin-left: -100%;
+                width: 12.5em;
+                height: 100%;
+            }
+            .right {
+                position: relative;
+                float: right;
+                margin-left: -100%;
+                width: 12.5em;
+                height: 100%;
+            }
+            .left li {
+                display: block;
+            }
+            header {
+                height: 6em;
+            }
+            footer {
+                height: 2em;
+            }
+        }
+        img {
+            display: block;
+        }
+        .loy-header-container {
+            position: relative;
+            width: 100%;
+        }
+        .loy-head {
+            position: relative;
+            width: 100%;
+            font-size: 1.5rem;
+        }
+        .loop_container {
+            position: absolute;
+            left: -0.5rem;
+            top: 22rem;
+            width: 100%;
+            color: white;
+            z-index: 9;
+        }
+        .loop_container li {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding-right: 10px;
+            height: 2.5rem;
+            line-height: 2.5rem;
+            border: 1px solid #F8CE46;
+            border-radius: 2rem;
+            background: rgba(0, 0, 0, 0.4);
+            -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+            white-space: nowrap;
+        }
+        .loop_container li img {
+            float: left;
+            width: 2rem;
+            margin: 2px;
+            border-radius: 100%;
+            border: 0.5px solid white;
+        }
+        .loop_container li span {
+            color: #F2A13A;
+            padding: 0 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="loy-header-container">
+    <div class="loy-head">
+
+        <ul class="loop_container">
+            <li><img src="/uploads/user_upload/36614/avatar.png" /><span>大白鸽</span>放飞了爱情天灯，10秒前</li>
+            <li><img src="/uploads/user_upload/36614/avatar.png" /><span>大白鸽</span>放飞了爱情天灯，11秒前</li>
+            <li><img src="/uploads/user_upload/36614/avatar.png" /><span>大白鸽</span>放飞了爱情天灯，12秒前</li>
+            <li><img src="/uploads/user_upload/36614/avatar.png" /><span>大白鸽</span>放飞了爱情天灯，13秒前</li>
+            <li><img src="/uploads/user_upload/36614/avatar.png" /><span>大白鸽</span>放飞了爱情天灯，14秒前</li>
+            <li><img src="/uploads/user_upload/36614/avatar.png" /><span>大白鸽</span>放飞了爱情天灯，15秒前</li>
+            <li><img src="/uploads/user_upload/36614/avatar.png" /><span>大白鸽</span>放飞了爱情天灯，16秒前</li>
+            <li><img src="/uploads/user_upload/36614/avatar.png" /><span>大白鸽</span>放飞了爱情天灯，17秒前</li>
+            <li><img src="/uploads/user_upload/36614/avatar.png" /><span>大白鸽</span>放飞了爱情天灯，18秒前</li>
+        </ul>
+
+    </div>
+</div>
+</body>
+<script src="libs/TweenMax.min.js"></script>
+<script>
+    var loop_length = document.querySelectorAll(".loop_container li").length,
+        dur_time = 3,
+        up_velocity = "-=" + (loop_length - 1) * dur_time;
+
+    var awardLoop = new TimelineMax({
+        repeat: -1
+    });
+    awardLoop
+        .staggerTo(".loop_container li", 1, {
+            ease: Power4.easeOut,
+            x: 0,
+            y: 0,
+            opacity: 1
+        }, dur_time)
+        .staggerTo(".loop_container li", 1, {
+            ease: Sine.easeOut,
+            x: 0,
+            y: -200,
+            opacity: 0
+        }, dur_time, up_velocity);
+</script>
+</html>
